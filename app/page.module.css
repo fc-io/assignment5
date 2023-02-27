@@ -7,6 +7,13 @@
   min-height: 100vh;
 }
 
+.h1 {
+  font-size: 50px;
+}
+
+.h1color {
+  color: red;
+}
 .description {
   display: inherit;
   justify-content: inherit;

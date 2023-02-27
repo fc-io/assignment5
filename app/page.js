@@ -1,15 +1,18 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Advent_Pro } from 'next/font/google'
 import styles from './page.module.css'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Advent_Pro({
+  variable: '--font-inter',
+  subsets: ['latin']
+})
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={inter.className}>
       <div>
-        <h1>Rubrik</h1>
+        <h1 className={`${styles.h1} ${styles.h1color}`} >Rubrik</h1>
         <Link href="/articles">Link to Articles</Link>
       </div>
     </main>
