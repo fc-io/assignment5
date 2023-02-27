@@ -15,7 +15,10 @@ function fetchQL(article) {
               name
               imageUrl
               films
+              shortFilms
               tvShows
+              videoGames
+              imageUrl
             }
             paginationInfo {
               totalPages

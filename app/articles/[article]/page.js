@@ -24,8 +24,9 @@ export default async function Article({ params }) {
   return <div>
     <h1>Article – {params.article}</h1>
     <Link href={`/articles/${nextPage}`}>Next Page</Link>
-    {data?.data?.characters?.items.map(({_id, name}) => {
+    {data?.data?.characters?.items.map(({_id, name, films}) => {
       return <div key={_id}>
+        <h1>{name}</h1>
         <h1>{name}</h1>
       </div>
     })}
